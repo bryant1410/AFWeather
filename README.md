@@ -10,7 +10,7 @@ Getting the weather forecast never has been so easy and it supports 5 different 
 
 ![alt text](https://raw.github.com/AlvaroFranco/AFWeather/master/preview.png "Preview")
 
-##Installation
+## Installation
 
 AFWeather is available on CocoaPods so you can get it by adding this line to your Podfile:
 	
@@ -21,7 +21,7 @@ If you don't use CocoaPods, you will have to import these files into your projec
 	AFWeather.h
 	AFWeather.m
 
-##Services supported
+## Services supported
 
 | Service name | Place name/Zip code | Coordinates | AFWeather name |
 |----------|-------|----------|---------|-------------|
@@ -31,20 +31,20 @@ If you don't use CocoaPods, you will have to import these files into your projec
 | **AccuWeather** | :white_check_mark: | :no_entry_sign: | *AFWeatherAPIAccuWeather* |
 | **Forecast.io** | :no_entry_sign: | :white_check_mark: | *AFWeatherAPIForecast* |
 
-##Usage
+## Usage
 
 First of all, make sure that you have imported the main class into the class where you are going to get the weather information.
 
 	#import "AFWeather.h"
 	
-###Configuring the client
+### Configuring the client
 
 In order to make AFWeather know what service are you using and what's your API key, use the method ```-configureClientWithService:withAPIKey:```. Example:
 
     [[AFWeather sharedClient]configureClientWithService:AFWeatherAPIForecast withAPIKey:@"myawesomeapikey"];
 
     
-###Getting the forecast from a city name or Zip code
+### Getting the forecast from a city name or Zip code
 
 For this, use ```-fetchForecastOfLocationWithName:andCompletionBlock:```
 
@@ -62,7 +62,7 @@ Example:
             }
         }];
 
-###Getting the forecast from the coordinates
+### Getting the forecast from the coordinates
 
 You can also use the latitude and the longitude instead of the place name.
 
@@ -78,8 +78,8 @@ You can also use the latitude and the longitude instead of the place name.
             }
         }];
 		
-##License
+## License
 AFWeather is under MIT license so feel free to use it!
 
-##Author
+## Author
 Made by Alvaro Franco. If you have any question, feel free to drop me a line at [alvarofrancoayala@gmail.com](mailto:alvarofrancoayala@gmail.com)
